@@ -108,11 +108,12 @@ def is_multiple_choice_question(text):
 
   # Đáp án không nằm trong các tùy chọn hay không
   answer = lines[-1].split(":")[1].strip()
-  #print(answer)
+  print(answer)
   lines = text.splitlines()
   full_answer = lines[1:-1]
-  #print(full_answer)
-  if answer not in full_answer:
+  full_answer1 = [phan_tu.strip() for phan_tu in full_answer] #bỏ space
+  print(full_answer1)
+  if answer not in full_answer1:
     return False  
 
   
@@ -128,18 +129,17 @@ def is_multiple_choice_question(text):
         abcd.append(match.group(0))       
   #print(abcd)
   if abcd != abcd_true:
-    return False      
-
+    return False  
 
   return True
  
 
 text = """Câu hỏi: Con vật nào dưới đây biết bay?
-A. Chim sẻ
-B. Đại bàng
-C. Dơi
-D. Cả 3 đáp án A B C đều đúng
-Đáp án: D. Cả 3 đáp án A B C đều đúng
+A) a[10]       
+B) a.append(10)     
+C) a[:10]        
+D) Cả 3 đáp án A B C đều đúng      
+Đáp án: D) Cả 3 đáp án A B C đều đúng              
 """
 
 if is_multiple_choice_question(text):
