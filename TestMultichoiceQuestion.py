@@ -107,7 +107,7 @@ def is_multiple_choice_question(text):
         return False
 
   # Đáp án không nằm trong các tùy chọn hay không
-  answer = lines[-1].split(": ")[1].strip()
+  answer = lines[-1].split(":")[1].strip()
   #print(answer)
   lines = text.splitlines()
   full_answer = lines[1:-1]
