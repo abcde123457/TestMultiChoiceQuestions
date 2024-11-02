@@ -6,7 +6,7 @@ def is_special_case(count_1, count_2, count_3, count_4):
 
 def is_multiple_choice_question(text):
   
-  pattern = r"^(Câu hỏi:)(.*)$|^[A-D]\.?\s+(.*)$|^(Đáp án:)(.*)$"
+  pattern = r"^(Câu hỏi:)(.*)$|^[A-D][\.\)]?\s+(.*)$|^(Đáp án:)(.*)$"
   lines = text.splitlines()
   
   if not lines[0].startswith("Câu hỏi:"):
@@ -48,7 +48,7 @@ def is_multiple_choice_question(text):
   matches = re.findall(pattern, text)
   count_B_dot = len(matches)
 
-  pattern = r"A\)"
+  pattern = r"B\)"
   matches = re.findall(pattern, text)
   count_B_parenthesis = len(matches)
 
@@ -85,7 +85,7 @@ def is_multiple_choice_question(text):
   unique_options = []
  
   for line in lines[1:-1]:
-    match = re.match(r"^[A-D]\.?\s+(.*)$", line)
+    match = re.match(r"^[A-D][\.\)]?\s+(.*)$", line)
     if not match:
       return False
     option = match.group(1).strip()[0:]
@@ -135,7 +135,7 @@ def is_multiple_choice_question(text):
  
 
 text = """Câu hỏi: Con vật nào dưới đây biết bay?
-Chim sẻ
+A. Chim sẻ
 B. Đại bàng
 C. Dơi
 D. Cả 3 đáp án A B C đều đúng
