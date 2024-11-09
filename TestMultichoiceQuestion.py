@@ -1,10 +1,17 @@
 import re
 
-
+def remove_dot_at_end(text):
+    lines = text.splitlines()
+    result = []
+    for line in lines:
+        if line.endswith('.'):
+            line = line[:-1]
+        result.append(line)
+    return '\n'.join(result)
 
 def is_special_case(count_1, count_2, count_3, count_4):
  
-  special_cases = [(2, 1, 1, 1), (1, 2, 1, 1), (1, 1, 2, 1), (1, 1, 1, 2), (1, 1, 1, 1)]
+  special_cases = [ (1, 1, 1, 1)]
   return (count_1, count_2, count_3, count_4) in special_cases
 
 output_message=""
@@ -12,6 +19,12 @@ output_message=""
 def is_multiple_choice_question(text):
   
   global output_message
+
+  try: 
+    text = remove_dot_at_end(text)
+  except Exception as e:
+    output_message="Đã xảy ra lỗi khi bỏ dấu chấm cuối mỗi dòng {e}"  
+    return False
 
   try: 
     if text is None or text =="":
@@ -24,7 +37,7 @@ def is_multiple_choice_question(text):
   
   pattern = r"^(Câu hỏi:)(.*s)$|^[A-D][\.\)]?\s?(.*)$|^(Đáp án:)(.*)$" #BT Chính quy
   lines = text.splitlines()
-   
+  #for line in lines: print(line)
    
   try:
     if not lines[-1].startswith("Đáp án:"):
@@ -33,6 +46,7 @@ def is_multiple_choice_question(text):
   except Exception as e:
     output_message="Đã xảy ra lỗi kiểm tra Bắt đầu bằng Đáp án {e}"  
     return False
+
 
   try:
     if (len(lines)) < 6:
@@ -45,6 +59,7 @@ def is_multiple_choice_question(text):
   except Exception as e:
     output_message="Đã xảy ra lỗi kiểm tra số dòng hay Cụm 'Câu hỏi:'  {e}"  
     return False
+
 
 
   try:
@@ -81,55 +96,62 @@ def is_multiple_choice_question(text):
 
   #check số lượng ABCD dưới đây là những từ cần đếm khớp viết hoa
   
-  pattern = r"A\."
-  matches = re.findall(pattern, text)
+  pattern = r"^A\."
+  for line in lines:
+   matches = re.findall(pattern, text, re.MULTILINE)
   count_A_dot = len(matches)
 
-  pattern = r"A\)"
-  matches = re.findall(pattern, text)
+  pattern = r"^A\)"
+  for line in lines:
+    matches = re.findall(pattern, text, re.MULTILINE)
   count_A_parenthesis = len(matches)
 
   count_1 = count_A_dot + count_A_parenthesis
   
 
-  pattern = r"B\."
-  matches = re.findall(pattern, text)
+  pattern = r"^B\."
+  for line in lines:
+   matches = re.findall(pattern, text, re.MULTILINE)
   count_B_dot = len(matches)
 
-  pattern = r"B\)"
-  matches = re.findall(pattern, text)
+  pattern = r"^B\)"
+  for line in lines:
+   matches = re.findall(pattern, text, re.MULTILINE)
   count_B_parenthesis = len(matches)
 
   count_2 = count_B_dot + count_B_parenthesis
   
 
-  pattern = r"C\."
-  matches = re.findall(pattern, text)
+  pattern = r"^C\."
+  for line in lines:
+   matches = re.findall(pattern, text, re.MULTILINE)
   count_C_dot = len(matches)
 
-  pattern = r"C\)"
-  matches = re.findall(pattern, text)
+  pattern = r"^C\)"
+  for line in lines:
+   matches = re.findall(pattern, text, re.MULTILINE)
   count_C_parenthesis = len(matches)
 
   count_3 = count_C_dot + count_C_parenthesis
   
 
-  pattern = r"D\."
-  matches = re.findall(pattern, text)
+  pattern = r"^D\."
+  for line in lines:
+   matches = re.findall(pattern, text, re.MULTILINE)
   count_D_dot = len(matches)
 
-  pattern = r"D\)"
-  matches = re.findall(pattern, text)
+  pattern = r"^D\)"
+  for line in lines:
+   matches = re.findall(pattern, text, re.MULTILINE)
   count_D_parenthesis = len(matches)
 
   count_4 = count_D_dot + count_D_parenthesis
   
-  '''
+  
   print(count_1)
   print(count_2)
   print(count_3)
   print(count_4)
-  '''
   
   
   
@@ -190,9 +212,11 @@ def is_multiple_choice_question(text):
 
   # Đáp án nằm trong các tùy chọn hay không
   try:
-   answer = lines[-1].split(":")[1].strip()
+   answer = lines[-1].split("Đáp án:")[1].strip()
+   if answer.endswith('.'):
+            answer = answer[:-1]
    #print(answer)
-   lines = text.splitlines()
+   #lines = text.splitlines()
    full_answer = lines[-5:-1]
    full_answer1 = [phan_tu.strip() for phan_tu in full_answer] #bỏ space
    #print(full_answer1)
@@ -226,15 +250,16 @@ def is_multiple_choice_question(text):
   return True
  
 
-text = """Câu hỏi: Con vật nào dưới đây biết bay?
-A) a[10]       
-B) a.append(10)     
-C) a[:10]        
-D) Cả 3 đáp án A B C đều đúng     
-Đáp án: D) Cả 3 đáp án A B C đều đúng         
+text = """Câu hỏi: AI nào sau đây là ví dụ của AI yếu?
+A.Agricola.
+B.MYCIN.
+C.WA
+D.EVA
+Đáp án: MYCIN.    
 """
 
 result = "False"
+
 
 
 if is_multiple_choice_question(text):
