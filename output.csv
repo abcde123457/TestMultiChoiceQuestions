@@ -74,7 +74,7 @@ A.Nhúng một video từ một kênh YouTube vào một trang web.
 B.Nhúng một hình ảnh từ một trang web A vào trang web B.
 C.Nhúng một đoạn mã JavaScript từ một trang web A vào trang web B.
 D.Nhúng một tệp PDF để xem trực tiếp trong một trang web.
-Đáp án: Nhúng một video từ một kênh YouTube vào một trang web.",False. Bị thừa hoặc thiếu các tùy chọn
+Đáp án: Nhúng một video từ một kênh YouTube vào một trang web.",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -1135,7 +1135,7 @@ A.Mạng LAN có dây.
 B.Mạng WLAN.
 C.Mạng WAN.
 D.Mạng Internet.
-Đáp án: Mạng WLAN",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: Mạng WLAN",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -1228,7 +1228,7 @@ A.Router.
 B.Router và Modem.
 C.Router, Modem và AP.
 D.Router, Modem và ISP.
-Đáp án: Router, Modem và AP",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: Router, Modem và AP",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -1266,7 +1266,7 @@ A.
 B.
 C.
 D.
-Đáp án: ",False. Tùy chọn bị lặp lại
+Đáp án: ",False. Bị thừa hoặc thiếu các tùy chọn
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -1422,7 +1422,7 @@ A.Là văn hoá của xã hội loài người.
 B.Có tình người.
 C.Có tính người.
 D.Có tính xã hội loài người.
-Đáp án: Là văn hoá của xã hội loài người",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: Là văn hoá của xã hội loài người",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -1530,7 +1530,7 @@ A.Khoa học máy tính.
 B.Khoa học sinh vật.
 C.Khoa học vũ trụ.
 D.Khoa học người máy.
-Đáp án: Khoa học người máy",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: Khoa học người máy",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -1564,7 +1564,7 @@ A.Camera
 B.Đèn chiếu sáng
 C.Tủ lạnh
 D.Cảm biến nhiệt độ
-Đáp án: Cáp mạng là một loại đây dẫn có vỏ bọc bảo vệ bên ngoài và bên trong có dây dẫn kim loại dễ truyền tin hiệu diện. A. Camera B. Đèn chiếu sáng C. Tủ lạnh D. Cảm biến nhiệt độ ",False. Bị thừa hoặc thiếu các tùy chọn
+Đáp án: Cáp mạng là một loại đây dẫn có vỏ bọc bảo vệ bên ngoài và bên trong có dây dẫn kim loại dễ truyền tin hiệu diện. A. Camera B. Đèn chiếu sáng C. Tủ lạnh D. Cảm biến nhiệt độ ",False. Đáp án không giống với bất cứ tùy chọn nào
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -1803,7 +1803,7 @@ A.Mạng cục bộ.
 B.Mạng trong phạm vi một toà nhà.
 C.Mạng trong phạm vi một cơ quan.
 D.Mạng trong phạm vi một trường học.
-Đáp án: Mạng cục bộ",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: Mạng cục bộ",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -2060,7 +2060,7 @@ A.Nội dung của trang https://example.com/image.jpg được hiển thị tro
 B.Nội dung của trang https://example.com/image.jpg được hiển thị đầy màn hình.
 C.Một ảnh có cỡ 300x200 trong trang https://example.com/image.jpg được hiển thị.
 D.Trang https://example.com/image.jpg được hiển thị trong cỡ 300x200.
-Đáp án: Nội dung của trang https://example.com/image.jpg được hiển thị trong cỡ 300x200.",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: Nội dung của trang https://example.com/image.jpg được hiển thị trong cỡ 300x200.",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -2289,7 +2289,7 @@ A.font-family: ""Arial, sans-serif"".
 B.\<p style=""font-family: Arial, sans-serif"">Text<\/p>
 C.\<pArial, sans-serif>Text<\/p>
 D.\<p font-family=""Arial, sans-serif"">Text<\/p>
-Đáp án: font-family: ""Arial, sans-serif"".",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: font-family: ""Arial, sans-serif"".",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -2413,7 +2413,7 @@ A.XXcolor: red;XX
 B.XXcolor: green;XX
 C.XXcolor: blue;XX
 D.XXcolor: yellow;XX
-Đáp án: XXcolor: red;XX",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: XXcolor: red;XX",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -2885,7 +2885,7 @@ A.Agricola.
 B.MYCIN.
 C.WA.
 D.EVA.
-Đáp án: MYCIN.",False. Bị thừa hoặc thiếu các tùy chọn
+Đáp án: MYCIN.",True. 
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
@@ -3999,7 +3999,7 @@ A.WebCam.
 B.Modem.
 C.PDA.
 D.Smartphone.
-Đáp án: Modem",False. Đáp án không giống với bất cứ tùy chọn nào
+Đáp án: Modem",True. 
 "Tạo một câu hỏi trắc nghiệm và đáp án dựa theo đoạn văn bản dưới đây
 
 ### Đoạn văn bản
@@ -4130,7 +4130,7 @@ A.Máy in có thể kết nối qua mạng LAN nếu máy tính và máy in cùn
 B.Máy in có thể kết nối qua mạng LAN nếu máy tính và máy in cùng nằm trong một mạng LAN.
 C.Máy in có thể kết nối qua mạng LAN nếu máy tính và máy in cùng nằm trong một mạng LAN.
 D.Máy in có thể kết nối qua Bluetooth nếu máy tính và máy in cùng nằm trong một mạng Bluetooth.
-Đáp án: Máy in có thể kết nối qua mạng LAN nếu máy tính và máy in cùng nằm trong một mạng LAN.",False. Bị thừa hoặc thiếu các tùy chọn
+Đáp án: Máy in có thể kết nối qua mạng LAN nếu máy tính và máy in cùng nằm trong một mạng LAN.",False. Tùy chọn bị lặp lại
 "Sau đây là hướng dẫn mô tả một nhiệm vụ, kết hợp với với hướng dẫn và ngữ cảnh. Hãy viêt một phản hồi là một câu hỏi trắc nghiệm và cung cấp 4 lựa chọn đáp án khác nhau. Hãy chắc chắn rằng mỗi đáp án đều khác biệt, và xác định rõ đáp án đúng.
 
 ### Ngữ cảnh
