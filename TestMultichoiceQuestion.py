@@ -147,12 +147,12 @@ def is_multiple_choice_question(text):
 
   count_4 = count_D_dot + count_D_parenthesis
   
-  
+  '''
   print(count_1)
   print(count_2)
   print(count_3)
   print(count_4)
-  
+  '''
   
   
   
